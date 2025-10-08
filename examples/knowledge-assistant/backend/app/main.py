@@ -212,7 +212,8 @@ knowledge_server = KnowledgeAssistantServer(agent=assistant_agent)
 
 app = FastAPI(title="ChatKit Knowledge Assistant API")
 
-_DATA_DIR = Path(__file__).parent / "data"
+
+_DATA_DIR = Path(__file__).parent.parent.parent / "data"
 
 app.add_middleware(
     CORSMiddleware,
